@@ -1,8 +1,11 @@
 import React from 'react'
+import Listings from '../components/Listings'
 
 const AllListings = () => {
   return (
-    <div>AllListings</div>
+    <section className='px-4 py-6'>
+      <Listings/>
+    </section>
   )
 }
 

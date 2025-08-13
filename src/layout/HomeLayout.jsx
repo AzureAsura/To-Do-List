@@ -5,7 +5,7 @@ import NavbarTest from '../components/NavbarTest'
 
 const HomeLayout = () => {
   return (
-    <div className='min-h-screen bg-gradient-to-br from-[#960200] to-[#1c1018]'>
+    <div className='min-h-screen bg-gradient-to-br from-[black] to-[red]'>
         <NavbarTest/>
         <Outlet/>
     </div>

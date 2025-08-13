@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Card = ({ todos }) => {
     return (
@@ -10,13 +11,13 @@ const Card = ({ todos }) => {
                 </h3>
 
 
-                <div class="flex justify-between items-center mb-4 text-sm text-gray-500">
-                    <span class="flex items-center">
-                        <i class="fa-regular fa-calendar-days text-indigo-500 mr-1"></i>
+                <div className="flex justify-between items-center mb-4 text-sm text-gray-500">
+                    <span className="flex items-center">
+                        <i className="fa-regular fa-calendar-days text-indigo-500 mr-1"></i>
                         {todos.location}
                     </span>
-                    <span class="flex items-center">
-                        <i class="fa-solid fa-location-dot text-red-500 mr-1"></i>
+                    <span className="flex items-center">
+                        <i className="fa-solid fa-location-dot text-red-500 mr-1"></i>
                         {todos.date}
                     </span>
                 </div>
@@ -31,9 +32,11 @@ const Card = ({ todos }) => {
 
 
                 <div className="flex gap-3">
-                    <button className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-lg text-sm font-medium transition">
+                    <Link
+                        to={`/edit/${todos.id}`}
+                        className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-lg text-sm font-medium transition text-center">
                         <i className="fa-solid fa-pen-to-square mr-1"></i>Edit
-                    </button>
+                    </Link>
                     <button className="flex-1 bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg text-sm font-medium transition">
                         <i className="fa-solid fa-trash-can mr-1"></i>Delete
                     </button>

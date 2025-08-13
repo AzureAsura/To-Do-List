@@ -1,44 +1,46 @@
-[
-  {
-    "id": "1",
-    "todo": "Watching Bleach",
-    "date": "19-8-2020",
-    "details": "Watching Bleach with 2 of my friends: Prad, Manu, and Anom while discussing the latest anime arcs.",
-    "location": "My house"
-  },
-  {
-    "id": "2",
-    "todo": "Grocery Shopping",
-    "date": "20-8-2020",
-    "details": "Buy vegetables, fruits, and snacks for the weekend.",
-    "location": "Local supermarket"
-  },
-  {
-    "id": "3",
-    "todo": "Gym Workout",
-    "date": "21-8-2020",
-    "details": "Leg day session including squats, lunges, and calf raises.",
-    "location": "Downtown Gym"
-  },
-  {
-    "id": "4",
-    "todo": "Project Meeting",
-    "date": "22-8-2020",
-    "details": "Discuss the new website design and assign tasks to team members.",
-    "location": "Office meeting room"
-  },
-  {
-    "id": "5",
-    "todo": "Read Manga",
-    "date": "23-8-2020",
-    "details": "Finish reading the latest chapter of One Piece and start Demon Slayer.",
-    "location": "Bedroom"
-  },
-  {
-    "id": "6",
-    "todo": "Family Dinner",
-    "date": "24-8-2020",
-    "details": "Have dinner with parents and siblings, catch up on recent events.",
-    "location": "Parent's house"
-  }
-]
+{
+  "todos" : [ 
+    {
+      "id": "1",
+      "todo": "Watching Bleach",
+      "date": "19-8-2020",
+      "details": "Watching Bleach with 2 of my friends: Prad, Manu, and Anom while discussing the latest anime arcs.",
+      "location": "My house"
+    },
+    {
+      "id": "2",
+      "todo": "Grocery Shopping",
+      "date": "20-8-2020",
+      "details": "Buy vegetables, fruits, and snacks for the weekend.",
+      "location": "Local supermarket"
+    },
+    {
+      "id": "3",
+      "todo": "Gym Workout",
+      "date": "21-8-2020",
+      "details": "Leg day session including squats, lunges, and calf raises.",
+      "location": "Downtown Gym"
+    },
+    {
+      "id": "4",
+      "todo": "Project Meeting",
+      "date": "22-8-2020",
+      "details": "Discuss the new website design and assign tasks to team members.",
+      "location": "Office meeting room"
+    },
+    {
+      "id": "5",
+      "todo": "Read Manga",
+      "date": "23-8-2020",
+      "details": "Finish reading the latest chapter of One Piece and start Demon Slayer.",
+      "location": "Bedroom"
+    },
+    {
+      "id": "6",
+      "todo": "Family Dinner",
+      "date": "24-8-2020",
+      "details": "Have dinner with parents and siblings, catch up on recent events.",
+      "location": "Parent's house"
+    }
+  ]
+}
