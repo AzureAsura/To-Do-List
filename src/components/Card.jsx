@@ -1,7 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
-const Card = ({ todos }) => {
+const Card = ({ todos ,deleteList}) => {
+
+    const navigate = useNavigate()
+
+    const onDeleteClick = (listId) => {
+        const confirm = ('Are you sure want to delete this? ')
+
+        if (!confirm) {
+            return
+        }
+        deleteList(listId)
+
+        navigate('/all-listings')
+    }
+
+
     return (
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
             <div className="p-6 flex flex-col h-full">
@@ -37,7 +53,9 @@ const Card = ({ todos }) => {
                         className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-lg text-sm font-medium transition text-center">
                         <i className="fa-solid fa-pen-to-square mr-1"></i>Edit
                     </Link>
-                    <button className="flex-1 bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg text-sm font-medium transition">
+                    <button 
+                     onClick={() => onDeleteClick(todos.id)}
+                    className="flex-1 bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg text-sm font-medium transition">
                         <i className="fa-solid fa-trash-can mr-1"></i>Delete
                     </button>
                 </div>
