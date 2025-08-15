@@ -42,7 +42,7 @@ const Listings = ({ recentList = false }) => {
     const sortedTodos = todo.sort((a, b) => {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
-        return dateB - dateA; // Newest first (descending order)
+        return dateA - dateB; // Newest first (descending order)
     });
 
     const todoList = recentList ? sortedTodos.slice(0, 2) : sortedTodos;

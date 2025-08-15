@@ -2,59 +2,45 @@
   "todos": [
     {
       "id": "1",
-      "todo": "Watching Bleach",
-      "date": "19-8-2020",
-      "details": "Watching Bleach with 2 of my friends: Prad, Manu, and Anom while discussing the latest anime arcs.",
-      "location": "My house"
+      "title": "Watching Bleach",
+      "location": "My house",
+      "date": "2025-08-13",
+      "details": "Watching Bleach with 2 of my friends: Prad, Manu, and Anom while discussing the latest anime arcs."
     },
     {
       "id": "2",
-      "todo": "Grocery Shopping",
-      "date": "20-8-2020",
-      "details": "Buy vegetables, fruits, and snacks for the weekend.",
-      "location": "Local supermarket"
+      "title": "Grocery Shopping",
+      "location": "Local supermarket",
+      "date": "2025-08-12",
+      "details": "Buy vegetables, fruits, and snacks for the weekend."
     },
     {
       "id": "3",
-      "todo": "Gym Workout",
-      "date": "21-8-2020",
-      "details": "Leg day session including squats, lunges, and calf raises.",
-      "location": "Downtown Gym"
+      "title": "Gym Workout",
+      "location": "Downtown Gym",
+      "date": "2025-08-25",
+      "details": "Leg day session including squats, lunges, and calf raises."
     },
     {
       "id": "4",
-      "todo": "Project Meeting",
-      "date": "22-8-2020",
-      "details": "Discuss the new website design and assign tasks to team members.",
-      "location": "Office meeting room"
+      "title": "Project Meeting",
+      "location": "Office meeting room",
+      "date": "2025-08-25",
+      "details": "Discuss the new website design and assign tasks to team members."
     },
     {
       "id": "5",
-      "todo": "Read Manga",
-      "date": "23-8-2020",
-      "details": "Finish reading the latest chapter of One Piece and start Demon Slayer.",
-      "location": "Bedroom"
+      "title": "Read Manga",
+      "location": "Bedroom",
+      "date": "2025-09-24",
+      "details": "Finish reading the latest chapter of One Piece and start Demon Slayer."
     },
     {
       "id": "6",
-      "todo": "Family Dinner",
-      "date": "24-8-2020",
-      "details": "Have dinner with parents and siblings, catch up on recent events.",
-      "location": "Parent's house"
-    },
-    {
-      "todo": "wwddw",
-      "date": "2025-08-01",
-      "location": "qqsdwd",
-      "details": "sqdqxdww",
-      "id": "de95"
-    },
-    {
-      "id": "6783",
-      "title": "f4ff",
-      "location": "4f4",
-      "date": "2025-08-28",
-      "details": "c4ef4"
+      "title": "Family Dinner",
+      "location": "Parent's house",
+      "date": "2025-05-15",
+      "details": "Have dinner with parents and siblings, catch up on recent events."
     }
   ]
 }
