@@ -20,9 +20,9 @@ const HomePage = () => {
 
   return (
     <>
-    <Hero addListSubmit={addList }/>
-    <Listings recentList={true}/>
+    <Listings recentList={true} extraDesign={true} noMb={true}/>
     <ViewAll/>
+    <Hero addListSubmit={addList }/>
     </>
   )
 }

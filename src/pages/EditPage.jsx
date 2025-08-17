@@ -3,6 +3,7 @@ import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import CurrentDataCard from '../components/CurrentDataCard';
 import { Link } from 'react-router-dom';
+import Button from '../components/Button';
 
 
 const EditPage = ({ editListSubmit }) => {
@@ -10,7 +11,7 @@ const EditPage = ({ editListSubmit }) => {
     const navigate = useNavigate();
     const { id } = useParams()
 
-    const [title, setTitle] = useState(list.todo);
+    const [title, setTitle] = useState(list.title);
     const [location, setLocation] = useState(list.location);
     const [date, setDate] = useState(list.date);
     const [details, setDetails] = useState(list.details);
@@ -111,21 +112,25 @@ const EditPage = ({ editListSubmit }) => {
                             </div>
 
                             <div className="flex gap-4 pt-8">
-                                <Link
-                                    to={`/all-listings`}
-                                    className="flex flex-1 items-center justify-center px-8 py-4 bg-red-500 hover:bg-red-600 text-white rounded-2xl font-semibold transition-all duration-300 border border-gray-300"
-                                >
-                                    <i className="fa-solid fa-times mr-2"></i>
-                                    Cancel
-                                </Link>
 
-                                <button
-                                    type="submit"
-                                    className="flex-1 px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-white rounded-2xl font-semibold shadow-lg "
+                                <Button
+                                    to={`/all-listings`}
+                                    variant="delete"
+                                    icon="fa-solid fa-pen-to-square"
+                                    className="flex-1"
                                 >
-                                    <i className="fa-solid fa-check mr-2"></i>
-                                    Update Todo
-                                </button>
+                                    Cancel
+                                </Button>
+
+                                <Button
+                                    variant="edit"
+                                    icon="fa-solid fa-pen-to-square"
+                                    className="flex-1 px-8 py-4"
+                                    type="submit"
+                                >
+                                    Update
+                                </Button>
+
                             </div>
                         </form>
                     </div>

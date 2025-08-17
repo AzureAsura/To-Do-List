@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../assets/logo.png'
 import { useState } from 'react';
 import { Menu, X, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -15,7 +14,7 @@ const NavbarTest = () => {
 
     const navItems = [
         { name: 'Home', href: '/' },
-        { name: 'All Listings', href: '/all-listings' },
+        { name: 'All Task', href: '/all-listings' },
     ]
 
     return (

@@ -2,11 +2,10 @@ import React from 'react'
 import Card from './Card'
 import { useState, useEffect } from 'react';
 
-const Listings = ({ recentList = false }) => {
+const Listings = ({ recentList = false, extraDesign = false , noMb}) => {
     const [todo, setToDo] = useState([])
     const [loading, setLoading] = useState(true)
 
-    // Declare the deleteList function BEFORE using it
     const deleteList = async (id) => {
         try {
             const res = await fetch(`/api/todos/${id}`, {
@@ -14,7 +13,6 @@ const Listings = ({ recentList = false }) => {
             })
 
             if (res.ok) {
-                // Update the local state to remove the deleted item
                 setToDo(prevTodos => prevTodos.filter(item => item.id !== id))
             }
         } catch (error) {
@@ -24,12 +22,11 @@ const Listings = ({ recentList = false }) => {
 
     useEffect(() => {
         const fetchTodo = async () => {
-            const apiUrl = recentList ? '/api/todos?_limit=2' : '/api/todos'
+            const apiUrl = recentList ? '/api/todos?_limit=3' : '/api/todos'
             try {
                 const res = await fetch(apiUrl);
                 const data = await res.json();
                 setToDo(data)
-
             } catch (error) {
                 console.log('Error fetching data', error)
             } finally {
@@ -37,25 +34,37 @@ const Listings = ({ recentList = false }) => {
             }
         }
         fetchTodo();
-    }, [])
+    }, [recentList])
 
     const sortedTodos = todo.sort((a, b) => {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
-        return dateA - dateB; // Newest first (descending order)
+        return dateA - dateB; 
     });
 
-    const todoList = recentList ? sortedTodos.slice(0, 2) : sortedTodos;
+    const todoList = sortedTodos;
+
 
     return (
-        <section className="px-4 pt-2 pb-20">
+        <section className="px-4 pt-2 pb-7">
             <div className="container-xl lg:container m-auto">
+
+                {extraDesign && (
+                    <div className="mb-12 mt-7">
+                        <div className="text-center mb-8">
+                            <h2 className="text-3xl font-bold text-gray-100 mb-2">Your Upcoming Tasks</h2>
+                            <p className="text-white">Stay organized with your most important tasks</p>
+                        </div>
+                    </div>
+                )}
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {todoList.map((todos) => (
                         <Card
                             key={todos.id}
                             todos={todos}
-                            deleteList={deleteList}  // Now this works because deleteList is declared above
+                            deleteList={deleteList}  
+                            noMb={noMb}
                         />
                     ))}
                 </div>

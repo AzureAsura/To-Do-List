@@ -22,7 +22,7 @@ const CurrentDataCard = ({data}) => {
                     </div>
                     <div className="bg-gray-50 rounded-2xl p-4 border border-gray-200">
                         <p className="text-lg text-gray-800 font-medium">
-                            {data.todo}
+                            {data.title}
                         </p>
                     </div>
                 </div>

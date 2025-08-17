@@ -1,46 +1,144 @@
 {
   "todos": [
     {
-      "id": "1",
-      "title": "Watching Bleach",
-      "location": "My house",
-      "date": "2025-08-13",
-      "details": "Watching Bleach with 2 of my friends: Prad, Manu, and Anom while discussing the latest anime arcs."
+      "id": "7",
+      "title": "Morning Jog",
+      "location": "City Park",
+      "date": "2025-08-20",
+      "details": "Jogging 5km to improve stamina and refresh the mind."
     },
     {
-      "id": "2",
-      "title": "Grocery Shopping",
-      "location": "Local supermarket",
-      "date": "2025-08-12",
-      "details": "Buy vegetables, fruits, and snacks for the weekend."
+      "id": "8",
+      "title": "Doctor Appointment",
+      "location": "Central Hospital",
+      "date": "2025-08-22",
+      "details": "Routine check-up for knee recovery after ACL surgery."
     },
     {
-      "id": "3",
-      "title": "Gym Workout",
-      "location": "Downtown Gym",
-      "date": "2025-08-25",
-      "details": "Leg day session including squats, lunges, and calf raises."
+      "id": "9",
+      "title": "Bookstore Visit",
+      "location": "Downtown Bookstore",
+      "date": "2025-08-23",
+      "details": "Buy new novels and manga releases for the month."
     },
     {
-      "id": "4",
-      "title": "Project Meeting",
-      "location": "Office meeting room",
-      "date": "2025-08-25",
-      "details": "Discuss the new website design and assign tasks to team members."
+      "id": "10",
+      "title": "Movie Night",
+      "location": "Cinema XXI",
+      "date": "2025-08-28",
+      "details": "Watch the latest Marvel movie with friends."
     },
     {
-      "id": "5",
-      "title": "Read Manga",
-      "location": "Bedroom",
-      "date": "2025-09-24",
-      "details": "Finish reading the latest chapter of One Piece and start Demon Slayer."
+      "id": "11",
+      "title": "Coding Practice",
+      "location": "Home Office",
+      "date": "2025-08-29",
+      "details": "Practice React and Tailwind by building a new mini-project."
     },
     {
-      "id": "6",
-      "title": "Family Dinner",
-      "location": "Parent's house",
-      "date": "2025-05-15",
-      "details": "Have dinner with parents and siblings, catch up on recent events."
+      "id": "12",
+      "title": "Beach Day",
+      "location": "Kuta Beach",
+      "date": "2025-09-01",
+      "details": "Relax by the sea, swim, and take sunset photos."
+    },
+    {
+      "id": "13",
+      "title": "Online Course",
+      "location": "Udemy Platform",
+      "date": "2025-09-05",
+      "details": "Complete a web development course focusing on APIs and databases."
+    },
+    {
+      "id": "14",
+      "title": "Volunteer Work",
+      "location": "Local Community Center",
+      "date": "2025-09-07",
+      "details": "Help organize charity event for underprivileged kids."
+    },
+    {
+      "id": "15",
+      "title": "Gaming Night",
+      "location": "My Room",
+      "date": "2025-09-09",
+      "details": "Play Valorant and Genshin Impact with the squad."
+    },
+    {
+      "id": "16",
+      "title": "Photography Walk",
+      "location": "Botanical Garden",
+      "date": "2025-09-12",
+      "details": "Take pictures of nature for portfolio and Instagram."
+    },
+    {
+      "id": "17",
+      "title": "Yoga Session",
+      "location": "Yoga Studio",
+      "date": "2025-09-14",
+      "details": "Attend a group yoga class for flexibility and stress relief."
+    },
+    {
+      "id": "18",
+      "title": "Cooking Class",
+      "location": "Downtown Culinary School",
+      "date": "2025-09-15",
+      "details": "Learn to cook Italian pasta and desserts."
+    },
+    {
+      "id": "19",
+      "title": "Hiking Trip",
+      "location": "Mount Batur",
+      "date": "2025-09-18",
+      "details": "Climb the mountain early morning to see the sunrise."
+    },
+    {
+      "id": "20",
+      "title": "Friend's Birthday",
+      "location": "Cafe Bali",
+      "date": "2025-09-19",
+      "details": "Celebrate with cake, gifts, and karaoke night."
+    },
+    {
+      "id": "21",
+      "title": "Museum Visit",
+      "location": "Art Museum",
+      "date": "2025-09-21",
+      "details": "Explore modern art exhibits and take notes for inspiration."
+    },
+    {
+      "id": "22",
+      "title": "Language Study",
+      "location": "Home",
+      "date": "2025-09-22",
+      "details": "Practice Japanese vocabulary and grammar for JLPT N4."
+    },
+    {
+      "id": "23",
+      "title": "Cycling Trip",
+      "location": "Countryside Road",
+      "date": "2025-09-23",
+      "details": "Cycle 20km with friends and stop for breakfast."
+    },
+    {
+      "id": "24",
+      "title": "Music Jam",
+      "location": "Garage Studio",
+      "date": "2025-09-25",
+      "details": "Practice guitar with friends, play anime OST songs."
+    },
+    {
+      "id": "25",
+      "title": "Tech Conference",
+      "location": "Convention Center",
+      "date": "2025-09-27",
+      "details": "Attend talks about AI, cloud computing, and startups."
+    },
+    {
+      "id": "26",
+      "title": "Relaxation Day",
+      "location": "Spa & Wellness Center",
+      "date": "2025-09-30",
+      "details": "Massage and sauna session to recover from a busy month."
     }
   ]
 }
